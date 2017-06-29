@@ -1,0 +1,6 @@
+<%- include("partials/header") %>
+<form method="POST" action="/posts/edit/<%= post._id %>">
+    <textarea name="text" rows="10" cols="30" placeholder="Co tě napadne..."><%= post.text %></textarea><br>
+    <input type="submit" value="Odeslat příspěvek"></input> 
+</form>
+<%- include("partials/footer") %>
